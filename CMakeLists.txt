@@ -1,27 +1,29 @@
-# Copyright (C) 2007-2010 LuaDist.
+# Copyright (C) 2007-2012 LuaDist.
 # Created by Peter Drahoš
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(xavante NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( xavante NONE )
+cmake_minimum_required ( VERSION 2.8 )
+include ( cmake/dist.cmake )
+include ( lua )
 
-INSTALL (FILES src/xavante/xavante.lua src/sajax/sajax.lua DESTINATION ${INSTALL_LMOD})
-INSTALL (FILES
-	src/xavante/cgiluahandler.lua
-	src/xavante/encoding.lua
-	src/xavante/filehandler.lua
-	src/xavante/httpd.lua
-	src/xavante/mime.lua
-	src/xavante/patternhandler.lua
-	src/xavante/redirecthandler.lua
-	src/xavante/vhostshandler.lua
-	src/xavante/indexhandler.lua
-	src/xavante/urlhandler.lua
-	src/xavante/ruleshandler.lua
-	DESTINATION ${INSTALL_LMOD}/xavante )
-INSTALL (FILES README DESTINATION ${INSTALL_DATA})
-INSTALL (DIRECTORY doc/ DESTINATION ${INSTALL_DOC})
-INSTALL (DIRECTORY examples/ DESTINATION ${INSTALL_EXAMPLE})
+install_lua_module ( xavante src/xavante/xavante.lua )
+install_lua_module ( xavante.cgiluahandler src/xavante/cgiluahandler.lua )
+install_lua_module ( xavante.encoding src/xavante/encoding.lua
+install_lua_module ( xavante.filehandler src/xavante/filehandler.lua
+install_lua_module ( xavante.httpd src/xavante/httpd.lua
+install_lua_module ( xavante.mime src/xavante/mime.lua 
+install_lua_module ( xavante.patternhandler src/xavante/patternhandler.lua
+install_lua_module ( xavante.redirecthandler src/xavante/redirecthandler.lua
+install_lua_module ( xavante.vhostshandler src/xavante/vhostshandler.lua
+install_lua_module ( xavante.indexhandler src/xavante/indexhandler.lua
+install_lua_module ( xavante.urlhandler src/xavante/urlhandler.lua
+install_lua_module ( xavante.ruleshandler src/xavante/ruleshandler.lua
+
+install_lua_module ( sajax src/sajax/sajax.lua)
+
+install_data ( README )
+install_doc ( doc/ )
+install_example ( examples/ )

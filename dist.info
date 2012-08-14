@@ -1,7 +1,7 @@
 --- This file is part of LuaDist projecte
 
 name = "xavante"
-version = "2.2.0"
+version = "2.2.1"
 
 desc = "Lua Web Server Library"
 author = "Javier Guerra, André Carregal, Fábio Mascarenhas"
