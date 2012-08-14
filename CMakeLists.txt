@@ -11,16 +11,16 @@ include ( lua )
 
 install_lua_module ( xavante src/xavante/xavante.lua )
 install_lua_module ( xavante.cgiluahandler src/xavante/cgiluahandler.lua )
-install_lua_module ( xavante.encoding src/xavante/encoding.lua
-install_lua_module ( xavante.filehandler src/xavante/filehandler.lua
-install_lua_module ( xavante.httpd src/xavante/httpd.lua
-install_lua_module ( xavante.mime src/xavante/mime.lua 
-install_lua_module ( xavante.patternhandler src/xavante/patternhandler.lua
-install_lua_module ( xavante.redirecthandler src/xavante/redirecthandler.lua
-install_lua_module ( xavante.vhostshandler src/xavante/vhostshandler.lua
-install_lua_module ( xavante.indexhandler src/xavante/indexhandler.lua
-install_lua_module ( xavante.urlhandler src/xavante/urlhandler.lua
-install_lua_module ( xavante.ruleshandler src/xavante/ruleshandler.lua
+install_lua_module ( xavante.encoding src/xavante/encoding.lua )
+install_lua_module ( xavante.filehandler src/xavante/filehandler.lua )
+install_lua_module ( xavante.httpd src/xavante/httpd.lua )
+install_lua_module ( xavante.mime src/xavante/mime.lua )
+install_lua_module ( xavante.patternhandler src/xavante/patternhandler.lua )
+install_lua_module ( xavante.redirecthandler src/xavante/redirecthandler.lua )
+install_lua_module ( xavante.vhostshandler src/xavante/vhostshandler.lua )
+install_lua_module ( xavante.indexhandler src/xavante/indexhandler.lua )
+install_lua_module ( xavante.urlhandler src/xavante/urlhandler.lua )
+install_lua_module ( xavante.ruleshandler src/xavante/ruleshandler.lua )
 
 install_lua_module ( sajax src/sajax/sajax.lua)
 
