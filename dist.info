@@ -1,0 +1,51 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Javier Guerra, André Carregal, Fábio Mascarenhas"
+depends = {
+[[copas >= 1.1.5]],
+[[luasocket >= 2.0]],
+[[luafilesystem >= 1.5.0]],
+}
+
+desc = "Lua Web Server Library"
+version = "2.2.1"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[lib/lua/xavante.lua]],
+[[lib/lua/xavante/cgiluahandler.lua]],
+[[lib/lua/xavante/encoding.lua]],
+[[lib/lua/xavante/filehandler.lua]],
+[[lib/lua/xavante/httpd.lua]],
+[[lib/lua/xavante/mime.lua]],
+[[lib/lua/xavante/patternhandler.lua]],
+[[lib/lua/xavante/redirecthandler.lua]],
+[[lib/lua/xavante/vhostshandler.lua]],
+[[lib/lua/xavante/indexhandler.lua]],
+[[lib/lua/xavante/urlhandler.lua]],
+[[lib/lua/xavante/ruleshandler.lua]],
+[[lib/lua/sajax.lua]],
+}
+,
+Documentation = {
+[[share/xavante/doc//us/sajax.html]],
+[[share/xavante/doc//us/license.html]],
+[[share/xavante/doc//us/manual.html]],
+[[share/xavante/doc//us/experimental.html]],
+[[share/xavante/doc//us/xavante.gif]],
+[[share/xavante/doc//us/index.html]],
+}
+,
+Data = {
+[[share/xavante/README]],
+}
+,
+Example = {
+[[share/xavante/example//config.lua]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "xavante"
+url = "http://www.keplerproject.org/xavante"
